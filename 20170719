@@ -1,0 +1,38 @@
+
+
+从远程仓库 拉过来，觉得不好，
+本地再建立一个， 连接到远程，
+有问题，开分支，开不好。
+
+
+
+
+因为他们是两个不同的项目，要把两个不同的项目合并，git需要添加一句代码，在git pull，这句代码是在git 2.9.2版本发生的，最新的版本需要添加--allow-unrelated-histories
+
+假如我们的源是origin，分支是master，那么我们 需要这样写git pull origin master ----allow-unrelated-histories需要知道，我们的源可以是本地的路径
+
+
+
+
+
+
+
+
+
+for (int i=0; i<5; i++) {
+        UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button .frame = CGRectMake(10+i*172+10*i, 15, 172, 82);
+       // [button setBackgroundColor:[UIColor blueColor]];
+        [bigScroll addSubview:button];
+     //   [button setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"scroll%d",i]] forState:UIControlStateNormal];
+        [button setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"scroll%d",i]] forState:UIControlStateNormal];
+        button.layer.masksToBounds = YES;
+        [button addTarget:self action:@selector(xiangqing) forControlEvents:UIControlEventTouchUpInside];
+        button.layer.cornerRadius = 15;
+        button.enabled = NO;
+    }
+    
+    
+    这样搞， button 的 图片 显示有问题。
+    灰灰的。
+    透明度 有问题。
