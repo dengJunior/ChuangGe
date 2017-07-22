@@ -1,0 +1,37 @@
+pushViewController 一个 界面。
+出现很震惊的 
+开眼效果，
+上方有 视图 在移除，
+
+因为设置了
+
+···
+
+- (void)viewWillDisappear:(BOOL)animated {
+     [super viewWillDisappear:animated];
+     [self.navigationController setNavigationBarHidden:NO animated:animated];
+   
+}
+
+···
+
+
+
+
+
+
+self.navigationController pushViewController 一个界面，
+出现很震惊的
+上部分 界面 颜色 从灰发亮，
+
+
+···
+
+-(void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:YES];
+     [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+···
+
+因为这样
